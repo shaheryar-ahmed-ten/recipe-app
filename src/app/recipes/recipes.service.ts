@@ -26,6 +26,7 @@ export class RecipeService {
 
     getRecipes(): Recipe[] {
         console.log("A")
+        console.log("c")
         return this.recipes.slice();
     }
 }
