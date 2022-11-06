@@ -14,6 +14,7 @@ export class ShoppingListService {
         console.log("addIngredient called");
         console.log("ingredient", ingredient)
         console.log("console 1")
+        console.log("console 2")
         this.ingredients.push(ingredient);
         this.ingredientsChanged.emit(this.ingredients.slice());
     }
