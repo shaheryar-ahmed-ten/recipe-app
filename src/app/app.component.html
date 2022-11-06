@@ -1,0 +1,3 @@
+<app-header (loadedComponent)="onComponentSelect($event)"></app-header>
+<app-recipes *ngIf="loadedComponent === 'recipe'"></app-recipes>
+<app-shopping-list *ngIf="loadedComponent !== 'recipe'"></app-shopping-list>

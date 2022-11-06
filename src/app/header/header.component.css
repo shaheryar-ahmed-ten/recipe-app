@@ -1,0 +1,24 @@
+nav {
+    background-color: #f7f7f5;
+}
+
+.dropdown-btn {
+    background-color: transparent;
+    color: rgba(0, 0, 0, .9);
+    border: none;
+    text-decoration: none;
+}
+
+.dropdown-btn:hover {
+    background-color: transparent;
+    color: rgba(0, 0, 0, .9);
+    border: none;
+}
+
+.toggler {
+    /* padding-right: 100px; */
+}
+
+/* .logo {
+    margin-right: auto
+} */

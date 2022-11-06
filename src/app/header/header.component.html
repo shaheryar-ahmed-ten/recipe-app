@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-md navbar-light">
+    <div class="container">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" (click)="toggleCollapsed()">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a href="#" class="navbar-brand me-auto px-3">Logo</a>
+        <div [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="navbar-item" (click)="onNavigate('recipe')"><a href="#" class="nav-link active" aria-current="page">Recipe</a></li>
+                <li class="navbar-item" (click)="onNavigate('shopping-list')"><a href="#" class="nav-link">Shopping List</a></li>
+            </ul>
+        </div>
+        <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">
+            <button type="button" class="btn btn-outline-primary me-2 dropdown-btn" id="dropdownManual"
+                ngbDropdownAnchor (focus)="myDrop.open()">Toggle dropdown</button>
+            <div ngbDropdownMenu aria-labelledby="dropdownManual">
+                <button ngbDropdownItem>Action - 1</button>
+                <button ngbDropdownItem>Another Action</button>
+                <button ngbDropdownItem>Something else is here</button>
+            </div>
+        </div>
+    </div>
+</nav>
