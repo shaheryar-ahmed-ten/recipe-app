@@ -16,7 +16,10 @@ export class RecipeService {
                 new Ingredient('french Fries', 20)
             ]
         ),
-        new Recipe("Nihari", "This is test biryani recipe", "https://i.pinimg.com/736x/98/e1/5b/98e15b76983bdef58f3c507515cd1969.jpg", [
+        new Recipe(
+            "Nihari",
+            "This is the Test Nihari recipe",
+            "https://i.pinimg.com/736x/98/e1/5b/98e15b76983bdef58f3c507515cd1969.jpg", [
             new Ingredient('Mirch', 1),
             new Ingredient('Masala', 2)
         ]),
@@ -25,8 +28,6 @@ export class RecipeService {
     selectedRecipe = new EventEmitter<Recipe>();
 
     getRecipes(): Recipe[] {
-        console.log("A")
-        console.log("c")
         return this.recipes.slice();
     }
 }
