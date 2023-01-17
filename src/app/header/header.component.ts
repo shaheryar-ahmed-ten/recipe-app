@@ -1,4 +1,4 @@
-import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -7,7 +7,6 @@ import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 })
 export class HeaderComponent implements OnInit {
 
-  @Output() loadedComponent = new EventEmitter<string>();
 
   collapsed = true;
   constructor() { }
@@ -17,9 +16,5 @@ export class HeaderComponent implements OnInit {
 
   toggleCollapsed(): void {
     this.collapsed = !this.collapsed;
-  }
-
-  onNavigate(componentName: string): void {
-    this.loadedComponent.emit(componentName)
   }
 }

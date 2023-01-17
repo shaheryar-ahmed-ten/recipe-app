@@ -7,8 +7,8 @@
         <a href="#" class="navbar-brand me-auto px-3">Logo</a>
         <div [ngClass]="{'collapse': collapsed, 'navbar-collapse': true}" id="navbarNav">
             <ul class="navbar-nav">
-                <li class="navbar-item" (click)="onNavigate('recipe')"><a href="#" class="nav-link active" aria-current="page">Recipe</a></li>
-                <li class="navbar-item" (click)="onNavigate('shopping-list')"><a href="#" class="nav-link">Shopping List</a></li>
+                <li class="navbar-item" routerLinkActive="active"><a routerLink="/recipes" class="nav-link active" aria-current="page">Recipe</a></li>
+                <li class="navbar-item" routerLinkActive="active"><a routerLink="/shopping-list" class="nav-link">Shopping List</a></li>
             </ul>
         </div>
         <div class="d-inline-block" ngbDropdown #myDrop="ngbDropdown">

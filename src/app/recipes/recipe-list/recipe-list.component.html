@@ -8,9 +8,10 @@
     <div class="col-xs-12">
         <!-- <ul class="list-group"> -->
             <app-recipe-item 
-                *ngFor="let recipe of recipes" 
+                *ngFor="let recipe of recipes; let i = index;" 
                 [recipe]="recipe"
-                (click)="onRecipeClick(recipe)"    
+                [index]="i"
+                (click)="onRecipeClick(recipe)"   
             ></app-recipe-item>
             <img src="" alt="">
         <!-- </ul> -->

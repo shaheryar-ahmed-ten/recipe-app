@@ -12,6 +12,7 @@ import { ShoppingListEditComponent } from './shopping-list/shopping-edit/shoppin
 import { HeaderComponent } from './header/header.component';
 import { RecipeComponent } from './recipes/recipes.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { RecipeStartComponent } from './recipes/recipe-start/recipe-start.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     RecipeDetailComponent,
     ShoppingListEditComponent,
     HeaderComponent,
-    RecipeComponent
+    RecipeComponent,
+    RecipeStartComponent,
   ],
   imports: [
     BrowserModule,
