@@ -23,12 +23,11 @@
         id="dropdownBasic1"
         ngbDropdownToggle
       >
-        Toggle dropdown
+        Manage Recipe
       </button>
       <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
-        <button ngbDropdownItem>Action - 1</button>
+        <button ngbDropdownItem (click)="onEditRecipe()">Edit Recipe</button>
         <button ngbDropdownItem>Another Action</button>
-        <button ngbDropdownItem>Something else is here</button>
       </div>
     </div>
   </div>
